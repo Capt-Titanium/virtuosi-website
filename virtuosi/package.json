@@ -1,0 +1,23 @@
+{
+  "name": "virtuosi",
+  "version": "1.0.0",
+  "description": "website for music soc",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Capt-Titanium/virtuosi-website.git"
+  },
+  "author": "Music Society IIITA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Capt-Titanium/virtuosi-website/issues"
+  },
+  "homepage": "https://github.com/Capt-Titanium/virtuosi-website#readme",
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
