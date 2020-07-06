@@ -21,15 +21,15 @@ body {
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: #111111;
   color: floralwhite;
   padding: 10px;
 }
-
 .copyright {
   padding-top: 10px;
 }
+
+/*position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;*/
