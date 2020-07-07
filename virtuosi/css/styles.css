@@ -1,5 +1,5 @@
 body {
-  background-color: bisque;
+  background-color: #e9e986;
 }
 
 .navbar {
@@ -14,7 +14,7 @@ body {
 
 .jumbotron {
   padding-top: 75px;
-  color: bisque;
+  color: #e9e986;
   background-color: #111111;
   text-align: center;
   border-radius: 0%;
@@ -22,14 +22,18 @@ body {
 
 .footer {
   background-color: #111111;
-  color: floralwhite;
+  color: #e9e986;
   padding: 10px;
 }
 .copyright {
   padding-top: 10px;
 }
 
-/*position: fixed;
-bottom: 0;
-left: 0;
-width: 100%;*/
+#particles-js {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin-top: 0px;
+  background: transparent;
+}
