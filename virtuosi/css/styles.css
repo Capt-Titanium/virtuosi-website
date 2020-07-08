@@ -27,6 +27,7 @@ body {
 }
 .copyright {
   padding-top: 10px;
+  color: #ffffff;
 }
 
 #particles-js {
@@ -37,3 +38,48 @@ body {
   margin-top: 0px;
   background: transparent;
 }
+footer img{
+  height: 30% !important;
+  width: 50px !important;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+footer ul {
+  padding-left: 0px !important;
+  margin-bottom: 0px !important;
+}
+footer .fa {
+  width: 40px !important;
+  font-size: 18px;
+  padding: 10px;
+  padding-left: 10px;
+  border-radius: 50px;
+  background-color: rgb(32, 18, 18);
+}
+.fa-facebook-official{
+  padding-left: 12px !important;
+  color: rgb(7, 77, 182);
+  border: 1px solid rgb(7, 77,182);
+}
+.fa-instagram{
+  padding-left: 11px !important;
+  color: rgb(158, 47, 99);
+  border: 1px solid rgb(158, 47, 99);
+}
+.fa-youtube-play {
+  color: rgb(231, 48, 48);
+  border: 1px solid rgb(231, 48, 48);
+}
+.fa-envelope {
+  color: #4437b9;
+  border: 1px solid #4437b9;
+}
+footer .fa:hover {
+  background-color: #ffffff;
+  border: none;
+}
+
