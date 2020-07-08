@@ -21,6 +21,7 @@ body {
 }
 
 .footer {
+  width: 100%;
   background-color: #111111;
   color: #e9e986;
   padding: 10px;
@@ -30,19 +31,11 @@ body {
   color: #ffffff;
 }
 
-#particles-js {
-  z-index: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  margin-top: 0px;
-  background: transparent;
-}
-footer img{
+footer img {
   height: 30% !important;
   width: 50px !important;
 }
-.icons{
+.icons {
   display: flex;
   justify-content: center;
   padding-top: 15px;
@@ -60,12 +53,12 @@ footer .fa {
   border-radius: 50px;
   background-color: rgb(32, 18, 18);
 }
-.fa-facebook-official{
+.fa-facebook-official {
   padding-left: 12px !important;
   color: rgb(7, 77, 182);
-  border: 1px solid rgb(7, 77,182);
+  border: 1px solid rgb(7, 77, 182);
 }
-.fa-instagram{
+.fa-instagram {
   padding-left: 11px !important;
   color: rgb(158, 47, 99);
   border: 1px solid rgb(158, 47, 99);
@@ -83,3 +76,66 @@ footer .fa:hover {
   border: none;
 }
 
+.maincontent {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.des {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #f0f06a;
+  color: #111111;
+  font-size: 125%;
+}
+.des:hover {
+  padding: 20px;
+  background-color: #111111;
+  color: #f0f06a;
+  font-size: 125%;
+}
+
+.events {
+  background-color: #111111;
+  color: #e9e986;
+}
+
+.carousel {
+  background-color: #e9e986;
+  margin: 20px 20px 20px 20px;
+}
+
+.carousel .carousel-item img {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.carousel-caption {
+  color: #f0f06a;
+  background-color: #111111;
+}
+
+.carousel-indicators {
+  background-color: #111111;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #111111;
+  height: 10%;
+  width: 20%;
+}
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
