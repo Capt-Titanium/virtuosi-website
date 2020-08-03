@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- add animation-->
+  <!-- make gallery page-->
+  <!-- make contact us page better-->
   <head>
     <meta charset="utf-8" />
     <!--unicode-->
@@ -30,6 +33,12 @@
   </head>
 
   <body>
+    <!--navbar starts-->
+    <!--
+    to be added :-
+      1. style the buttons better... 
+      2.the active thing...
+    -->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
       <div class="container">
         <button
@@ -40,13 +49,39 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand mr-auto" href="#">Virtuosi</a>
+        <a class="navbar-brand mr-auto" href="./index.html">Virtuosi</a>
         <div class="collapse navbar-collapse" id="Navbar">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                ><span class="fa fa-home fa-lg"></span> Home</a
+            <li class="nav-item active dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle nav-link"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                <span class="fa fa-home fa-lg"></span>
+                <span class="caret">Home</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a class="nav-link aboutlink" href="#info">
+                    <span class="fa fa-info fa-lg"></span>
+                    About Us
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#events">
+                    <span class="fa fa-star fa-lg"></span> Our Events</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#family"
+                    ><span class="fa fa-user fa-lg"></span> Our Family</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./gallery.html"
@@ -62,8 +97,11 @@
         </div>
       </div>
     </nav>
+    <!--navbar ends-->
 
-    <header class="jumbotron">
+    <!--jumbotron-->
+    <!--to be added - nothing bro...it's perfect...-->
+    <header class="jumbotron" id="jumbotron">
       <div class="container">
         <div class="row row-header">
           <div class="col-12">
@@ -78,32 +116,47 @@
       </div>
     </header>
 
+    <!--
+    
+    Main content contains.. :_
+    
+    1. intro:-
+      a. add some nice background
+      b. add better fade animaation... also make it more sassy
+    
+    2. our events:-
+      a. add photos
+    
+    3. our family:-
+      a. delete this shit maybe... 
+      b. make it our team and the nice circles with the hover stuff...
+    
+    -->
+
     <div class="maincontent">
-      <div class="row intro">
+      <div class="row intro" id="info">
         <div class="col-12">
           <h2><span class="fa fa-music fa-lg"></span> WHAT IS VIRTUOSI?</h2>
         </div>
         <div class="col-12 col-md-8">
           <p class="des">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            laborum perferendis sapiente fugiat alias quis iusto saepe! Libero
-            et est, ipsam deleniti neque quam nobis consequatur molestias
-            nesciunt omnis eius.Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Optio sint quo ullam mollitia quasi quisquam
-            distinctio corrupti a et veniam odio id perferendis tenetur nam
-            fugit temporibus, eveniet saepe velit?Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Eaque necessitatibus labore
-            voluptatibus quasi dolorum similique molestiae magni fugit
-            temporibus iure perferendis odio officia maiores consectetur
-            tenetur, sunt doloribus, ipsum et!Lorem ipsum Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Provident hic dolorum
-            voluptatibus voluptatum, debitis tenetur? Similique cumque
-            temporibus.
+            We are the music Society of IIIT Allahabad! At Virtuosi, we enter
+            the world of rythm and flow in the river of melody.From crazy random
+            jam sessions to thrilling stage performances, we fill hearts with
+            music.
+            <br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            aperiam ipsum libero error sed nam vero optio? Repellat voluptate
+            odit recusandae, quo sunt tenetur sed doloremque deleniti. Earum,
+            quia tempore?
           </p>
         </div>
+        <!--div class="col-md-4 d-none d-md-block">
+          <img src="images/guitar.png" />
+        </div-->
       </div>
 
-      <div class="row events">
+      <div class="row events" id="events">
         <div class="col-12">
           <h2><span class="fa fa-music fa-lg"></span> OUR EVENTS</h2>
         </div>
@@ -116,9 +169,9 @@
                   src="images/chords.jpg"
                   alt="chords"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-lg-block">
                   <h3>Chords</h3>
-                  <p class="d-none d-sm-block">
+                  <p class="d-none d-lg-block">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Perferendis debitis voluptatum dolorum optio laudantium,
                     culpa fugit voluptatem. Officia in doloribus magnam, esse
@@ -133,9 +186,9 @@
                   src="images/chords.jpg"
                   alt="chords"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-lg-block">
                   <h3>Chords</h3>
-                  <p class="d-none d-sm-block">
+                  <p class="d-none d-lg-block">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Perferendis debitis voluptatum dolorum optio laudantium,
                     culpa fugit voluptatem. Officia in doloribus magnam, esse
@@ -150,9 +203,9 @@
                   src="images/chords.jpg"
                   alt="chords"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-lg-block">
                   <h3>Chords</h3>
-                  <p class="d-none d-sm-block">
+                  <p class="d-none d-lg-block">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Perferendis debitis voluptatum dolorum optio laudantium,
                     culpa fugit voluptatem. Officia in doloribus magnam, esse
@@ -197,52 +250,322 @@
         </div>
         <div class="offset-2 col-8">
           <ul class="nav nav-tabs">
-            <li class="nav-item active">
-              <a class="nav-link" data-toggle="tab" href="#a"> 2019</a>
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#a">
+                Cordinators</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#b"> 2018</a>
+              <a class="nav-link" data-toggle="tab" href="#b">
+                Senior Members</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#c"> 2017</a>
+              <a class="nav-link" data-toggle="tab" href="#c"> Members</a>
             </li>
           </ul>
 
           <div class="tab-content">
-            <div id="a" class="tab-pane fade in active">
-              <h3>MH1 :)</h3>
-              <p>
-                hum log<br />Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Mollitia quas quaerat minus, autem cupiditate voluptatibus
-                voluptatem. Asperiores, molestiae quod! Odit facilis pariatur
-                ipsam aut error autem architecto doloremque expedita eos?
-              </p>
+            <div id="a" class="tab-pane active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Kartic Choubey</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Parag Goyal</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Vidur Kataria</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div id="b" class="tab-pane fade">
-              <h3>(jo bhi naam hai)</h3>
-              <p>
-                kartic sir in 50% frame<br />Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Perferendis quo dolores
-                perspiciatis dicta placeat voluptas voluptatibus, ratione animi
-                atque, ad eos quisquam exercitationem incidunt quis ut dolorem
-                dignissimos, voluptate modi?
-              </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Shipra Gaur</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Abhaya Sharma</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Nathan Jacob</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Rishabh Pal</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Pranal Mahashwari</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Ankush Pandey</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div id="c" class="tab-pane fade">
-              <h3>IM.MATURE</h3>
-              <p>
-                Kaustubh sir and company<br />Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Dolor autem tempore, at mollitia a
-                sed veritatis cupiditate ipsum, earum vero repellendus officiis
-                harum omnis corrupti soluta voluptates nesciunt ducimus.
-                Aperiam.
-              </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Tanish Agarwal</h4>
+                        <span>+91 7668278339</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Vaishnav Trivedi</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Soumyadeep 'Lashkar'</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Anurag Bandhopadhyay</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Snehalreet Kaur</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Vishwaas Singh</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Daniel DAY</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Muskandeep Kaur</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 col-xl-3 member">
+                    <img src="images/user.jpg" />
+                    <div class="information">
+                      <div class="info-content">
+                        <h4>Puneet Singhwaniya</h4>
+                        <span>contact number</span>
+                        <div class="social">
+                          <a href=""><i class="fa fa-instagram"></i></a>
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                          <a href=""><i class="fa fa-google-plus"></i></a>
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- perfect - courtesy : Adarsh Tripathiji-->
     <footer class="footer">
       <div class="container">
         <div class="icons">
@@ -280,7 +603,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,6 +1,22 @@
+/*               BODY                        */
 body {
   background-color: #e9e986;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/*                         NAVBAR                    */
 
 .navbar {
   background-color: black;
@@ -12,6 +28,17 @@ body {
   font-size: 125%;
 }
 
+.dropdown-menu {
+  background-color: black;
+}
+
+.nav-item {
+  align-items: center;
+  text-align: center;
+}
+
+/*                    JUMBOTRON                    */
+
 .jumbotron {
   padding-top: 75px;
   color: #e9e986;
@@ -19,6 +46,201 @@ body {
   text-align: center;
   border-radius: 0%;
 }
+
+/*only in gallery and contactus page*/
+.breadcrumb {
+  background-color: #111111;
+}
+
+.breadcrumb a {
+  color: #e9e986;
+}
+
+.breadcrumb a:hover {
+  text-decoration: none;
+}
+
+/*                        MAIN CONTENT STARTS              */
+
+/*              (intro/info)       */
+
+.des {
+  margin-top: 2%;
+  margin-left: 2%;
+  padding: 2%;
+  background-color: #f0f06a;
+  color: #111111;
+  font-size: 125%;
+}
+.des:hover {
+  margin-top: 2%;
+  margin-left: 2%;
+  padding: 2%;
+  background-color: #111111;
+  opacity: 0.9;
+  color: #f0f06a;
+  font-size: 125%;
+}
+
+/*              events         */
+
+.events {
+  background-color: #111111;
+  color: #e9e986;
+}
+
+.carousel {
+  background-color: #e9e986;
+  margin: 5% 5% 5% 5%;
+}
+
+.carousel .carousel-item img {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.carousel-caption {
+  color: #f0f06a;
+  background-color: #111111;
+}
+
+.carousel-indicators {
+  background-color: #111111;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #111111;
+  height: 10%;
+  width: 20%;
+}
+
+/*               family             */
+
+.family {
+  margin-bottom: 50px;
+}
+
+.family .nav-link {
+  background-color: #f0f06a;
+  color: #111111;
+  border-width: 2px;
+  border-color: #111111;
+}
+
+.family .nav-link:focus {
+  background-color: #111111;
+  color: #f0f06a;
+  border-width: 0px;
+}
+
+.family .nav-link:hover {
+  background-color: #111111;
+  color: #f0f06a;
+  border-width: 0px;
+}
+.family .nav-link:active {
+  background-color: #111111;
+  color: #f0f06a;
+  border-width: 0px;
+}
+
+.tab-content {
+  background: #111111;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content img {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.member {
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.information {
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+.information .info-content {
+  margin-top: 50px;
+  transition: margin 0.2s;
+}
+
+.member:hover .information {
+  background: #111111;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.member:hover .info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+.member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #f0f06a;
+}
+
+.member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #f0f06a;
+}
+
+.member .social {
+  margin-top: 15px;
+}
+
+.member .social a {
+  transition: none;
+  color: #f0f06a;
+}
+
+.member .social a:hover {
+  color: #fff;
+}
+
+.member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+/*                        GALLERY.....<(^._.^)>                 */
+
+/*                       CONTACT US...:)              */
+
+/*                                 FOOTER                   */
 
 .footer {
   width: 100%;
@@ -58,7 +280,7 @@ footer .fa {
   color: rgb(7, 77, 182);
   border: 1px solid rgb(7, 77, 182);
 }
-.fa-instagram {
+footer .fa-instagram {
   padding-left: 11px !important;
   color: rgb(158, 47, 99);
   border: 1px solid rgb(158, 47, 99);
@@ -74,68 +296,4 @@ footer .fa {
 footer .fa:hover {
   background-color: #ffffff;
   border: none;
-}
-
-.maincontent {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-h2 {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.des {
-  margin-top: 10px;
-  margin-left: 20px;
-  padding: 20px;
-  background-color: #f0f06a;
-  color: #111111;
-  font-size: 125%;
-}
-.des:hover {
-  padding: 20px;
-  background-color: #111111;
-  color: #f0f06a;
-  font-size: 125%;
-}
-
-.events {
-  background-color: #111111;
-  color: #e9e986;
-}
-
-.carousel {
-  background-color: #e9e986;
-  margin: 20px 20px 20px 20px;
-}
-
-.carousel .carousel-item img {
-  width: 40%;
-  margin-left: 30%;
-}
-
-.carousel-caption {
-  color: #f0f06a;
-  background-color: #111111;
-}
-
-.carousel-indicators {
-  background-color: #111111;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #111111;
-  height: 10%;
-  width: 20%;
-}
-
-.tab-content {
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding: 10px;
 }
