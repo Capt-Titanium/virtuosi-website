@@ -71,14 +71,14 @@ h2 {
   background-color: #f0f06a;
   color: #111111;
   font-size: 125%;
+  transition: 0.5s;
 }
 .des:hover {
   margin-top: 2%;
   margin-left: 2%;
   padding: 2%;
-  background-color: #111111;
-  opacity: 0.9;
-  color: #f0f06a;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+
   font-size: 125%;
 }
 
@@ -121,25 +121,26 @@ h2 {
   margin-bottom: 50px;
 }
 
-.family .nav-link {
+.nav-tabs .nav-link {
   background-color: #f0f06a;
   color: #111111;
   border-width: 2px;
   border-color: #111111;
+  transition: 0.5s;
 }
 
-.family .nav-link:focus {
+/*.family .nav-link:focus {
+  background-color: #111111;
+  color: #f0f06a;
+  border-width: 0px;
+}*/
+
+.nav-tabs .nav-link:hover {
   background-color: #111111;
   color: #f0f06a;
   border-width: 0px;
 }
-
-.family .nav-link:hover {
-  background-color: #111111;
-  color: #f0f06a;
-  border-width: 0px;
-}
-.family .nav-link:active {
+.nav-tabs .nav-link.active {
   background-color: #111111;
   color: #f0f06a;
   border-width: 0px;
@@ -238,6 +239,53 @@ h2 {
 
 /*                        GALLERY.....<(^._.^)>                 */
 
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 20px !important;
+  max-height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
 /*                       CONTACT US...:)              */
 
 /*                                 FOOTER                   */
@@ -274,6 +322,7 @@ footer .fa {
   padding-left: 10px;
   border-radius: 50px;
   background-color: rgb(32, 18, 18);
+  transition: 0.5s;
 }
 .fa-facebook-official {
   padding-left: 12px !important;
