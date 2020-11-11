@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- add animation-->
-  <!-- make gallery page-->
-  <!-- make contact us page better-->
-  <head>
-    <meta charset="utf-8" />
-    <!--unicode-->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="images/newlogo.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--full page ruins stuff!!!-->
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" /-->
+    <link rel="icon" href="images/newlogo.png" /><!--needs fix-->
+    <title>
+        Virtuosi - IIITA
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -32,583 +30,286 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
     />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-
     <title>Virtuosi - The Music Society | IIITA</title>
-  </head>
-
-  <body>
-    <!--navbar starts-->
-    <!--
-    to be added :-
-      1. style the buttons better... 
-      2.the active thing...
-    -->
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#Navbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand mr-auto" href="./index.html">Virtuosi</a>
-        <div class="collapse navbar-collapse" id="Navbar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active dropdown">
-              <a
-                href="#"
-                class="dropdown-toggle nav-link"
-                data-toggle="dropdown"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <span class="fa fa-home fa-lg"></span>
-                <span class="caret">Home</span>
-              </a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a class="nav-link aboutlink" href="#info">
-                    <span class="fa fa-info fa-lg"></span>
-                    About Us
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#events">
-                    <span class="fa fa-star fa-lg"></span> Our Events</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#family"
-                    ><span class="fa fa-user fa-lg"></span> Our Family</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./gallery.html"
-                ><span class="fa fa-photo fa-lg"></span> Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html"
-                ><span class="fa fa-address-card fa-lg"></span> Contact Us</a
-              >
-            </li>
-          </ul>
+</head>
+<body>
+    <div id="content">
+        <div class="container">
+            <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top">
+                <a class="navbar-brand" href="/index.html">Virtuosi</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav  justify-content-end mr-5">
+                    <li class="nav-item">
+                      <a class="nav-link hvr-grow-shadow" href="#sectionLink1"> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sectionLink2">
+                             About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sectionLink3">
+                             Our Events
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sectionLink4">
+                             Our Family
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sectionLink5">
+                             Contact Us
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
         </div>
-      </div>
-    </nav>
-    <!--navbar ends-->
-
-    <!--jumbotron-->
-    <!--to be added - nothing bro...it's perfect...-->
-    <header class="jumbotron" id="jumbotron">
-      <div class="container">
-        <div class="row row-header">
-          <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="logo">
-              <img src="images/logoname.png" height="25%" width="50%" />
-            </div>
-            <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
-              <h6 class="music">Music Society, IIIT ALLAHABAD</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!--
-    
-    Main content contains.. :_
-    
-    1. intro:-
-      a. add some nice background
-      b. add better fade animaation... also make it more sassy
-    
-    2. our events:-
-      a. add photos
-    
-    3. our family:-
-      a. delete this shit maybe... 
-      b. make it our team and the nice circles with the hover stuff...
-    
-    -->
-
-    <div class="maincontent">
-      <div class="row intro" id="info">
-        <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
-          <h2><span class="fa fa-music fa-lg"></span> WHAT IS VIRTUOSI?</h2>
-        </div>
-        <div class="col-12 col-md-8">
-          <p class="wow fadeInUp des" data-wow-delay="0.4s">
-            We are the music Society of IIIT Allahabad! At Virtuosi, we enter
-            the world of rythm and flow in the river of melody.From crazy random
-            jam sessions to thrilling stage performances, we fill hearts with
-            music.
-            <br /><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            aperiam ipsum libero error sed nam vero optio? Repellat voluptate
-            odit recusandae, quo sunt tenetur sed doloremque deleniti. Earum,
-            quia tempore?
-          </p>
-        </div>
-        <!--div class="col-md-4 d-none d-md-block">
-          <img src="images/guitar.png" />
-        </div-->
-      </div>
-
-      <div class="row events" id="events">
-        <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
-          <h2><span class="fa fa-music fa-lg"></span> OUR EVENTS</h2>
-        </div>
-        <div class="offset-2 col-8">
-          <div id="mycarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <img
-                  class="d-block img-fluid carouselimg"
-                  src="images/chords.jpg"
-                  alt="chords"
-                />
-                <div class="carousel-caption d-none d-lg-block">
-                  <h3>Chords</h3>
-                  <p class="d-none d-lg-block">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Perferendis debitis voluptatum dolorum optio laudantium,
-                    culpa fugit voluptatem. Officia in doloribus magnam, esse
-                    numquam animi explicabo. Nesciunt necessitatibus vitae
-                    cupiditate neque.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid carouselimg"
-                  src="images/chords.jpg"
-                  alt="chords"
-                />
-                <div class="carousel-caption d-none d-lg-block">
-                  <h3>Chords</h3>
-                  <p class="d-none d-lg-block">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Perferendis debitis voluptatum dolorum optio laudantium,
-                    culpa fugit voluptatem. Officia in doloribus magnam, esse
-                    numquam animi explicabo. Nesciunt necessitatibus vitae
-                    cupiditate neque.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid carouselimg"
-                  src="images/chords.jpg"
-                  alt="chords"
-                />
-                <div class="carousel-caption d-none d-lg-block">
-                  <h3>Chords</h3>
-                  <p class="d-none d-lg-block">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Perferendis debitis voluptatum dolorum optio laudantium,
-                    culpa fugit voluptatem. Officia in doloribus magnam, esse
-                    numquam animi explicabo. Nesciunt necessitatibus vitae
-                    cupiditate neque.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <ol class="carousel-indicators">
-              <li
-                data-target="#mycarousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#mycarousel" data-slide-to="1"></li>
-              <li data-target="#mycarousel" data-slide-to="2"></li>
-            </ol>
-            <a
-              class="carousel-control-prev"
-              href="#mycarousel"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#mycarousel"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row family">
-        <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
-          <h2><span class="fa fa-music fa-lg"></span> OUR FAMILY</h2>
-        </div>
-        <div class="offset-2 col-8">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#a">
-                Cordinators</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#b">
-                Senior Members</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#c"> Members</a>
-            </li>
-          </ul>
-
-          <div class="tab-content">
-            <div id="a" class="tab-pane active">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Kartic Choubey</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Parag Goyal</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Vidur Kataria</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="b" class="tab-pane fade">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Shipra Gaur</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Abhaya Sharma</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Nathan Jacob</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Rishabh Pal</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Pranal Mahashwari</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Ankush Pandey</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="c" class="tab-pane fade">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Tanish Agarwal</h4>
-                        <span>+91 7668278339</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Vaishnav Trivedi</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Soumyadeep 'Lashkar'</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Anurag Bandhopadhyay</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Snehalreet Kaur</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Vishwaas Singh</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Daniel DAY</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Muskandeep Kaur</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5 col-xl-3 member">
-                    <img src="images/user.jpg" />
-                    <div class="information">
-                      <div class="info-content">
-                        <h4>Puneet Singhwaniya</h4>
-                        <span>contact number</span>
-                        <div class="social">
-                          <a href=""><i class="fa fa-instagram"></i></a>
-                          <a href=""><i class="fa fa-facebook"></i></a>
-                          <a href=""><i class="fa fa-google-plus"></i></a>
-                          <a href=""><i class="fa fa-linkedin"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <!-- perfect - courtesy : Adarsh Tripathiji-->
-    <footer class="footer">
-      <div class="container">
-        <div class="icons">
-          <ul>
-            <i class="fa fa-facebook-official"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-youtube-play"></i>
-            <i class="fa fa-envelope"></i>
-          </ul>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-auto">
-            <p class="copyright">
-              Designed by <span style="color: #f0f06a;">Team Virtuosi</span> -
-              IIIT Allahabad
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    <!-- HOME/jumbotron -->
+    <main>
+        <section id="section1" class="home">
+            <header class="jumbotron" id="jumbotron">
+                <div class="container">
+                    <div class="row row-header">
+                        <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="logo">
+                                <img src="images/logoname.png" height="25%" width="50%" />
+                            </div>
+                            <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
+                                <h6 class="music">Music Society, IIIT ALLAHABAD</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <section id="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-2 col-8 offset-2">
+                        <h1>What Is Virtuosi??</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-2 col-8">
+                        <img src="images/stage.jpg" class="align-center" >
+                    </div>
+                    
+                </div>
+                <p>The dictionary says that “Virtuosi” means a group of skilled musicians or artists. 
+                    Well...  we might not be professionals but we play what we play from the bottom of our hearts and melody runs through our veins. Virtuosi is a place where all the musical souls that arrive at IIITA gather and express their infinitesimal love for music!...
+                </p>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-2 col-8 offset-2">
+                        <h1>Our Events</h1>
+                    </div>
+                </div>
+                <div class="row event-carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center">
+                                    <div class="offset-lg-0 col-lg-6 offset-2 col-8 ">
+                                        <img src="images/chords.jpg" alt="First slide">
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <h3>Chords</h3>
+                                        <p>Once in the odd semester, we entertain people with some performances and that’s not it! A kareoke competiton is held for all the singers who have been sitting in the audience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row justify-content-center">
+                                    <div class="offset-lg-0 col-lg-6 offset-2 col-8 ">
+                                        <img src="images/chords.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <h3>Chords</h3>
+                                        <p>Once in the odd semester, we entertain people with some performances and that’s not it! A kareoke competiton is held for all the singers who have been sitting in the audience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row justify-content-center">
+                                    <div class="offset-lg-0 col-lg-6 offset-2 col-8 ">
+                                        <img src="images/chords.jpg" alt="First slide">
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <h3>Chords</h3>
+                                        <p>Once in the odd semester, we entertain people with some performances and that’s not it! A kareoke competiton is held for all the singers who have been sitting in the audience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section4">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-2 col-8 offset-2">
+                        <h1>Our Family</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div id="familycarousel" class="event-carousel carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#familycarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#familycarousel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <img src="images/user.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#familycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#familycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section5">
+            <footer class="footer">
+                <div class="container">
+                  <div class="icons">
+                    <ul>
+                      <i class="fa fa-facebook-official"></i>
+                      <i class="fa fa-instagram"></i>
+                      <i class="fa fa-youtube-play"></i>
+                      <i class="fa fa-envelope"></i>
+                    </ul>
+                  </div>
+          
+                  <div class="row justify-content-center">
+                    <div class="col-auto">
+                      <p class="copyright">
+                        Designed by <span style="color: #f0f06a;">Team Virtuosi</span> -
+                        IIIT Allahabad
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+        </section>
+    </main>
+    
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+    <script-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
