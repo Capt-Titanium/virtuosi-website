@@ -1,13 +1,20 @@
-Welcome!
+# :notes: HEYY THERE !!
+### welcome to the repo for the official website of virtuosi - music society IIITA
+You can view our work [here](
+https://capt-titanium.github.io/virtuosi-website/virtuosi/)
 
-to view the website go to the following link:
+#### OR 
+view it locally by typing the following command in your terminal:-
+```
+$ git clone https://github.com/Capt-Titanium/virtuosi-website.git
+```
 
-https://capt-titanium.github.io/virtuosi-website/virtuosi/
+#### For contributing to the website
+follow the following instructions:-
 
-or 
+* fork the repo
+* clone your forked repo using "git clone https://github.com/your-github-username/virtuosi-website.git"
+* push your changes
+* send a PR ;)
 
-you can view it locally..
-this is how:-
-1.clone the repo
-2.in the files find index.html
-3.open index.html in your choice of browser....enjoy ;)
+##### Hope to make it look sassy af
